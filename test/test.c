@@ -18,16 +18,16 @@ int main(void) {
     printf("NULL est vide ? %d\n", list_is_empty(NULL)); 
 
    
-    printf("Longueur de la liste de test : %d\n", list_length(test_list));
+    printf("Longueur de la liste de tet : %d\n", list_length(test_list));
 
     
-    printf("Valeur de l'élément d'index 0 dans la liste de test : %d\n", get_element(test_list, 0)->value); 
+    printf("Valeur de l'èlément d'index 0 dans la liste de test : %d\n", get_element(test_list, 0)->value); 
    
     printf("Liste de test après accès à l'élément : ");
     print_list(test_list); // DEVRAIT AFFICHER [8]
 
    
-    printf("-> Ajout de l'élément 3 au début de la liste\n");
+    printf(" Ajout de l'élément 3 au début de la liste\n");
     prepend_list(&test_list, 3);
 
     
@@ -35,12 +35,12 @@ int main(void) {
     print_list(test_list); // DEVRAIT AFFICHER [3, 8]
 
     
-    printf("-> Ajout des éléments 7 et 45 à la fin de la liste\n");
+    printf("-> Ajout des élément 7 et 45 à la fin de la liste\n");
     append_list(test_list, 7);
     append_list(test_list, 45);
 
     
-    printf("Liste de test après ajout à la fin : ");
+    printf("Liste de test après ajout a la fin : ");
     print_list(test_list); 
 
     
@@ -52,7 +52,7 @@ int main(void) {
     print_list(test_list); 
 
     
-    printf("-> Suppression du premier élément de la liste\n");
+    printf("-> Suppression du premier éléments de la liste\n");
     delete_first(&test_list);
 
     // Affichage de la liste de test après la suppression
@@ -64,15 +64,15 @@ int main(void) {
     delete_last(test_list);
 
   
-    printf("Liste de test après suppression du dernier élément : ");
+    printf("Liste de test après suppressio du dernier élément : ");
     print_list(test_list); 
 
    
-    printf("-> Suppression de l'élément d'index 1 dans la liste\n");
+    printf(" Suppresion de l'élément d'index 1 dans la liste\n");
     remove_element(test_list, 1);
 
    
-    printf("Liste de test après suppression de l'élément d'index 1 : ");
+    printf("Liste de test après supression de l'élément d'index 1 : ");
     print_list(test_list);
 
     return 0;
