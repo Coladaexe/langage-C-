@@ -15,7 +15,7 @@ int main(void) {
     printf("La liste de test est vide ? %d\n", list_is_empty(test_list)); 
 
     
-    printf("NULL est vide ? %d\n", list_is_empty(NULL)); 
+    printf("NUL est vide ? %d\n", list_is_empty(NULL)); 
 
    
     printf("Longueur de la liste de tet : %d\n", list_length(test_list));
@@ -27,11 +27,11 @@ int main(void) {
     print_list(test_list); // DEVRAIT AFFICHER [8]
 
    
-    printf(" Ajout de l'élément 3 au début de la liste\n");
+    printf(" Ajout de l'élément 3 au débu de la liste\n");
     prepend_list(&test_list, 3);
 
     
-    printf("Liste de test après ajout au début : ");
+    printf("Liste de tes après ajout au début : ");
     print_list(test_list); // DEVRAIT AFFICHER [3, 8]
 
     
@@ -52,15 +52,15 @@ int main(void) {
     print_list(test_list); 
 
     
-    printf("-> Suppression du premier éléments de la liste\n");
+    printf("-> Suppression du premir éléments de la liste\n");
     delete_first(&test_list);
 
     // Affichage de la liste de test après la suppression
-    printf("Liste de test après suppression du premier élément : ");
+    printf("Liste de test après supession du premier élément : ");
     print_list(test_list); // DEVRAIT AFFICHER [8, 9, 7, 45]
 
     
-    printf("-> Suppression du dernier élément de la liste\n");
+    printf("-> Suppression du dernier élément de la lite\n");
     delete_last(test_list);
 
   
@@ -68,7 +68,7 @@ int main(void) {
     print_list(test_list); 
 
    
-    printf(" Suppresion de l'élément d'index 1 dans la liste\n");
+    printf(" Suppresion de l'élément d'index 1 dan la liste\n");
     remove_element(test_list, 1);
 
    
